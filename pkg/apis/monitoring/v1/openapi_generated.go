@@ -1346,6 +1346,13 @@ func schema_pkg_apis_monitoring_v1_PrometheusSpec(ref common.ReferenceCallback) 
 							Format:      "",
 						},
 					},
+					"retentionSize": {
+						SchemaProps: spec.SchemaProps{
+							Description: "Disk usage Prometheus shall retain data for.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
 					"logLevel": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Log level for Prometheus to be configured with.",
